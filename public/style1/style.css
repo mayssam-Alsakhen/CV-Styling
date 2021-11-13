@@ -1,3 +1,129 @@
-body{
+header{
+    background-color: silver;
+    position: relative;
+}
+figure{
+    position: relative;
+    bottom: 80px;
+    left: 400px;
+}
+hgroup{
+position: relative;
+top: 50px;
+left: 200px;
+    color: red;
+}
+#contact h3{
+    display:none;
+}
+#contact{
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    background-color: black;
+    
+}
+.contacts dl{
+    display: flex;
+}
+.contacts dd {
+    margin: 0;
+    color:#fff;
+}
+.contacts dd a{
+    text-decoration: none;
+    color: red;
+}
+.contacts dt{
+    width: 130px;
     background-color: red;
+    color: #fff;
+}
+section{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    display: grid;
+    margin-right: 10px;
+    grid-template-areas: 
+    "about about competencies competencies"
+    "experiences experiences education education"
+    "Hobbies Hobbies Hobbies Hobbies";
+}
+.contact-skype .contact-value{
+    visibility: hidden;
+}
+#about{
+    grid-area:about;
+    margin-left: 100px;
+    margin-right: 0;
+}
+#competencies{
+    grid-area:competencies;
+    margin-right: -200px;
+    margin-left: 0;
+}
+#experiences{
+    grid-area:experiences;
+    margin-left: 100px;
+    margin-right: 0;
+}
+#education{
+    grid-area:education;
+    margin-right: -200px;
+    margin-left: 0;
+}
+#hobbies{
+    grid-area:Hobbies;
+    margin-left: 100px;
+}
+
+.experience-type{
+    color: red;
+}
+.experience-location::before{
+content: "in";
+color: silver;
+}
+.experience-institution::before{
+    content: "@";
+    color: red;
+}
+.experience-institution{
+    color: red;
+}
+h3::before{
+    content: ".";
+    font-size: 100px;
+    color: red;
+
+}
+.experience-date{
+    color: silver;
+}
+.experience-location{
+    color: silver;
+}
+.experience-date-separator{
+    color: red;
+    font-weight: bold;
+}
+.skills-primary::before{
+    content: "Main";
+}
+.skills-secondary::before{
+    content: "Other";
+}
+h3{
+    border-bottom: 1px solid gray;
+}
+.skill[data-skill="5"]
+{
+    background-color: gray;
+}
+.skill[data-skill="3"]
+{
+    background-color: gray;
 }
