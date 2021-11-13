@@ -1,3 +1,6 @@
+@media screen and (min-width:777px)
+{
+
 header{
     background-color: silver;
     position: relative;
@@ -17,14 +20,16 @@ left: 200px;
     display:none;
 }
 #contact{
+   
     position: absolute;
-    top: 5%;
+    top: 10%;
     right: 0%;
     background-color: black;
     
 }
 .contacts dl{
     display: flex;
+    margin: 0;
 }
 .contacts dd {
     margin: 0;
@@ -45,6 +50,14 @@ section{
     padding: 0;
 }
 .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+section{
+    width: 50%;
+   
+}
+/*.content{
     display: grid;
     margin-right: 10px;
     grid-template-areas: 
@@ -52,9 +65,7 @@ section{
     "experiences experiences education education"
     "Hobbies Hobbies Hobbies Hobbies";
 }
-.contact-skype .contact-value{
-    visibility: hidden;
-}
+
 #about{
     grid-area:about;
     margin-left: 100px;
@@ -78,7 +89,7 @@ section{
 #hobbies{
     grid-area:Hobbies;
     margin-left: 100px;
-}
+} */
 
 .experience-type{
     color: red;
@@ -122,8 +133,48 @@ h3{
 .skill[data-skill="5"]
 {
     background-color: gray;
+    margin-top: 10px;
 }
 .skill[data-skill="3"]
 {
     background-color: gray;
+    margin-top: 10px;
+}
+.skill[data-skill="1"]
+{
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.skill[data-skill="9"]
+{
+    background-color: gray;
+    margin-top: 10px;
+}
+.skill[data-skill="7"]
+{
+    background-color: gray;
+    margin-top: 10px;
+}
+.contact-skype .contact-value{
+    visibility: hidden;
+}
+
+}
+
+@media screen and (max-width:767px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    .contact-skype .contact-value{
+        color: black;
+    }
 }
