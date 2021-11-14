@@ -1,0 +1,159 @@
+header{
+    display: flex;
+    margin: 10% 10% 0% 10%;
+    text-align: justify;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    text-align: justify;
+
+}
+
+h1{
+   font-family:'Segoe UI';
+   border-bottom: silver solid;
+   padding-bottom: 5%;
+}
+
+h2{
+    display: none;
+}
+#about h3{
+    display: none;
+}
+#about p{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 100px;
+    color: grey;
+}
+.experience-type{
+color: rgb(18, 94, 145);
+}
+.experience-institution{
+ display: none;
+}
+.experience-location{
+    color: grey;
+    margin-right: 5px;
+}
+
+.experience-date{
+    color: gray;
+}
+.experience-date-separator{
+    color: rgb(18, 94, 145); 
+}
+.experience-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.contact-type {
+    visibility: hidden;
+}
+.contact-skype .contact-value{
+    display: none;
+}
+#contact h3{
+display: none;
+}
+.contact-value{
+    display: none;
+}
+.skills-primary {
+    display: flex;
+    flex-direction: row;
+}
+.skills-secondary{
+    display: flex;
+    flex-direction: row;
+}
+.skill[data-skill="5"]::after{
+    content: "  ***";
+    color: white;
+}
+/*    background-color:rgb(18, 94, 145) ;
+    color: white;
+    margin: 10px;
+}
+.skill[data-skill="3"]{
+    background-color:rgb(18, 94, 145) ;
+    color: white;
+    margin: 10px;
+}
+.skill[data-skill="5"]{
+    background-color:rgb(18, 94, 145) ;
+    color: white;
+    margin: 10px;
+}
+.skill[data-skill="7"]{
+    background-color:rgb(18, 94, 145) ;
+    color: white;
+    margin: 10px;
+}
+.skill[data-skill="9"]{
+    background-color:rgb(18, 94, 145) ;
+    color: white;
+    margin: 10px;
+}*/
+
+.skills-primary .skill{
+    display: inline-block;
+    width:120px;
+    height: 20px;
+    margin: 1em;
+    background-color:rgb(18, 94, 145) ;
+    color: white;
+    padding: 1%;
+}
+.skills-secondary .skill{
+    display: inline-block;
+    width:120px;
+    height: 12px;
+    margin: 1em;
+    background-color:rgb(18, 94, 145) ;
+    color: white;
+    padding: 1%;
+}
+.skill span{
+    text-align: left;
+}
+.skills-secondary span{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.skills-secondary .skill{
+    padding-bottom: 2%;
+}
+
+
+.contact-phone .contact-type{
+    height: 50px;
+    width: 50px;
+    background-image: url ("../images/phone.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media screen and (max-width:600px) {
+ h3{
+     text-decoration: underline;
+ }
+ header{
+     margin-right: 1%;
+     margin-left: 4%;
+ }
+div figure{
+    display: none;
+}
+.content{
+    margin:5% ;
+}
+ }
+
+
+
