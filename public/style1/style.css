@@ -1,4 +1,6 @@
-
+body{
+    font-family: sans-serif;
+}
 header{
     background-color: silver;
     width: 100%;
@@ -103,22 +105,45 @@ display: none;
     color: white;
     padding: 3px;
   }
-  .skill[data-skill="1"] span{
-
-}
-.skill[data-skill="5"] span{
-    padding-right: 50%;
-}
-.skill[data-skill="3"] span{
-    padding-right: 25%;
-}
-.skill[data-skill="7"] span{
-    padding-right: 75%;
-}
-.skill[data-skill="9"] span{
-    padding-right: 90%;
-    
-}
+  .skill[data-skill='1'] span {
+    width: calc(10% - 4%);
+  }
+  
+  .skill[data-skill='2'] span {
+    width: calc(20% - 4%);
+  }
+  
+  .skill[data-skill='3'] span {
+    width: calc(30% - 4%);
+  }
+  
+  .skill[data-skill='4'] span {
+    width: calc(40% - 4%);
+  }
+  
+  .skill[data-skill='5'] span {
+    width: calc(50% - 4%);
+  }
+  
+  .skill[data-skill='6'] span {
+    width: calc(60% - 4%);
+  }
+  
+  .skill[data-skill='7'] span {
+    width: calc(70% - 4%);
+  }
+  
+  .skill[data-skill='8'] span {
+    width: calc(80% - 4%);
+  }
+  
+  .skill[data-skill='9'] span {
+    width: calc(90% - 4%);
+  }
+  
+  .skill[data-skill='10'] span {
+    width: calc(100% - 4%);
+  }
 
 
 /*.content{
@@ -212,7 +237,7 @@ color: silver;
 
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:900px){
    header div{
        display: flex;
        flex-direction: column;
