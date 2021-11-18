@@ -4,86 +4,123 @@ header{
     width: 100%;
 }
 header div {
+    margin-left: 5%;
     display: flex;
     align-items: center;
 }
 hgroup{
     color: red;
+    font-weight: bold;
 }
-.skill span{
-    background-color: red;
-    
+section{
+    width: 50%;
 }
-
+section p{
+    padding-right: 20px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% 5%;
+}
 h3{
     margin-top: 0;
     border-bottom: 1px solid silver;
+}
+h3::before{
+    content: ".";
+    font-size: 100px;
+    color: red;
 }
 
 h4{
     margin-bottom: 0;
 }
+
 p{
     margin-bottom: 0;
 }
-#hobbies ul{
-    margin-bottom: 0;
-}
+
 #contact{
     position: absolute;
-    top:3%;
+    top: 3%;
     right: 0;
-}
-#contact h3{
-display: none;
 }
 .contacts dl{
     display: flex;
     margin: 0;
+    width: min-content;
 
 }
-.skill {
-    width: 100%;
-    background-color: grey;
-    margin: 5px 5px 5px 0;
-    padding: 5px;
-  }
-  .skill span {
-    display: inherit;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    padding: 3px;
-  }
 .contacts dd {
     background-color: black;
-    margin: 0;
     width: 600px;
-    color:#fff;
+    margin: 0;
 }
 .contacts dd a{
     text-decoration: none;
     color: red;
 }
 .contacts dt{
-    width: 130px;
+    width: 110px;
     background-color: red;
-    color: #fff;
+    color: white;
+    padding-bottom: 5px;
+    padding-left: 5px;
 }
-section{
-    width: 50%;
-    margin: 0;
-    padding: 0;
+#contact h3{
+display: none;
 }
-.content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-section{
-    width: 50%;
+
+.skill {
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+    width:100%;
    
+  }
+  .skills-primary .skill{
+    background-color: silver;
+  }
+  .skills-secondary .skill{
+      background-color: rgba(219, 210, 210, 0.788);
+  }
+
+  .skills-primary::before{
+    content: "Main";
 }
+.skills-secondary::before{
+    content: "Other";
+}
+.skills-primary .skill span{
+    display: inherit;
+    background-color: red;
+    color: white;
+    padding: 3px;
+  }
+ .skills-secondary .skill span {
+    display: inherit;
+    background-color: rgba(255, 0, 0, 0.582);
+    color: white;
+    padding: 3px;
+  }
+  .skill[data-skill="1"] span{
+
+}
+.skill[data-skill="5"] span{
+    padding-right: 50%;
+}
+.skill[data-skill="3"] span{
+    padding-right: 25%;
+}
+.skill[data-skill="7"] span{
+    padding-right: 75%;
+}
+.skill[data-skill="9"] span{
+    padding-right: 90%;
+    
+}
+
+
 /*.content{
     display: grid;
     margin-right: 10px;
@@ -129,15 +166,13 @@ color: silver;
     content: "@";
     color: red;
 }
+.experience-date::before{
+    content: "on";
+  }
 .experience-institution{
     color: red;
 }
-h3::before{
-    content: ".";
-    font-size: 100px;
-    color: red;
 
-}
 .experience-date{
     color: silver;
 }
@@ -148,59 +183,14 @@ h3::before{
     color: red;
     font-weight: bold;
 }
-.skills-primary::before{
-    content: "Main";
-}
-.skills-secondary::before{
-    content: "Other";
-}
-.skills-primary .skill[data-skill="5"]
-{
-    
-    margin-top: 10px;
 
-}
-.skill[data-skill="3"]
-{
-    margin-top: 10px;
-}
-.skill[data-skill="1"]
-{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.skill[data-skill="9"]
-{
-    margin-top: 10px;
-}
-.ills-secondary .skill[data-skill="5"]{
-    margin-top: 10px;
-}
-.skill[data-skill="7"]
-{
-    margin-top: 10px;
-}
+
+
  .contact-skype .contact-value{
     color:black;
     }
-    .skill[data-skill="1"] span{
-    
-    }
-    .skill[data-skill="5"] span{
-        padding-right: 50%;
-    }
-    .skill[data-skill="3"] span{
-        padding-right: 25%;
-    }
-    .skill[data-skill="7"] span{
-        padding-right: 75%;
-    }
-    .skill[data-skill="9"] span{
-        padding-right: 90%;
-        
-    }
+
 /*
-@media screen and (min-width:701px) {
    header{
        display: flex;
     flex-direction: column;
@@ -223,25 +213,38 @@ h3::before{
 
 
 @media screen and (max-width:700px){
-   header{
-       display: flexk;
+   header div{
+       display: flex;
        flex-direction: column;
-
-
-
+       align-items: flex-start;
+   }
+   section{
+       width: 100%;
    }
     .content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
     }
+    section p{
+        padding-right: 0;
+    }
+
     hgroup{
         margin-left: 30px;
     }
+    #contact{
+        position: static;
+    }
+    #contact h3{
+        display: inherit;
+    }
     #contact div{
         line-height: 25px;
+    }
+    #contact dd{
+        background-color: white;
     }
     
 }
