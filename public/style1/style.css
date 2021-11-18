@@ -1,8 +1,7 @@
-body{
-    font-family: sans-serif;
-}
+
 header{
     background-color: silver;
+    height: 200px;
     width: 100%;
 }
 header div {
@@ -16,6 +15,9 @@ hgroup{
 }
 section{
     width: 50%;
+}
+#about dl {
+    padding-right: 20px;
 }
 section p{
     padding-right: 20px;
@@ -38,11 +40,14 @@ h3::before{
 h4{
     margin-bottom: 0;
 }
-
-p{
-    margin-bottom: 0;
+#about {
+    font-size: 25px;
 }
 
+#about dd{
+    margin-left: 100px;
+    padding-left: 50px;
+}
 #contact{
     position: absolute;
     top: 3%;
@@ -55,13 +60,13 @@ p{
 
 }
 .contacts dd {
-    background-color: black;
+    background-color:rgb(77, 71, 71);
     width: 600px;
     margin: 0;
 }
 .contacts dd a{
     text-decoration: none;
-    color: red;
+    color:red;
 }
 .contacts dt{
     width: 110px;
@@ -70,6 +75,7 @@ p{
     padding-bottom: 5px;
     padding-left: 5px;
 }
+
 #contact h3{
 display: none;
 }
@@ -146,39 +152,10 @@ display: none;
   }
 
 
-/*.content{
-    display: grid;
-    margin-right: 10px;
-    grid-template-areas: 
-    "about about competencies competencies"
-    "experiences experiences education education"
-    "Hobbies Hobbies Hobbies Hobbies";
-}
 
-#about{
-    grid-area:about;
-    margin-left: 100px;
-    margin-right: 0;
-}
-#competencies{
-    grid-area:competencies;
-    margin-right: -200px;
-    margin-left: 0;
-}
-#experiences{
-    grid-area:experiences;
-    margin-left: 100px;
-    margin-right: 0;
-}
-#education{
-    grid-area:education;
-    margin-right: -200px;
-    margin-left: 0;
-}
-#hobbies{
-    grid-area:Hobbies;
-    margin-left: 100px;
-} */
+
+
+
 
 .experience-type{
     color: red;
@@ -213,28 +190,8 @@ color: silver;
 
  .contact-skype .contact-value{
     color:black;
-    }
-
-/*
-   header{
-       display: flex;
-    flex-direction: column;
-   }
-   .content{
-       display: flex;
-       flex-direction: row;
-   }
- 
- #contact h3{
-    display:none;
-}
-#contact{
-    position: absolute;
-    top: 3%;
-    right: 0%;
-    background-color: black;
-} */
-
+    
+ }
 
 
 @media screen and (max-width:900px){
@@ -251,6 +208,9 @@ color: silver;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    #about dl{
+        padding-right: 0;
     }
     section p{
         padding-right: 0;
